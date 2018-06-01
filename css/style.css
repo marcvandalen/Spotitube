@@ -1,0 +1,510 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    padding-top: 100px;
+    height: 100%;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* my code */
+#navStick{
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+*{
+    text-decoration: none;
+}
+header {
+    background-color: #ad1c14;
+    width: 100%;
+    height: 100px;
+}
+header .header-brand{
+    font-family: catamaran;
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header nav ul{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+header nav ul li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 16px;
+}
+header nav ul li a{
+    font-family: catamaran;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+header .header-inlog{
+    display: none;
+}
+header .header-signup{
+    display: none;
+}
+header .noshow{
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    header {
+        height: 80px;
+    }
+    header .header-brand{
+        margin: 21px 0;
+        text-align: left;
+        line-height: 38px;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #fff;
+        float: left;
+    }
+    header nav ul{
+        margin: 10px 0px 0px 20px;
+        float: left;
+    }
+    header nav ul li a{
+        line-height: 60px;
+    }
+    header .header-inlog{
+        display: block;
+        font-family: catamaran;
+        font-size: 16px;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 38px;
+        border: 1px solid #fff;
+        float: right;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding: 0 18px;
+    }
+    header .header-signup{
+        display: block;
+        font-family: catamaran;
+        font-size: 16px;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 38px;
+        border: 1px solid #fff;
+        float: right;
+        margin-right: 40px;
+        margin-top: 20px;
+        padding: 0 18px;
+    }
+    header .noshow{
+        display: block;
+    }
+}
+/*index*/
+.title {
+    font-family: catamaran;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 30px;
+    color: #111;
+    text-align: center;
+    margin-top: 20px;
+}
+body hr {
+    display: none;
+}
+.nummers {
+    font-family: catamaran;
+    font-size: 18px;
+    color: #111;
+    line-height: 24px;
+}
+.video {
+    position: center;
+}
+.index-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url("../images/concert.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+.vertical-center{
+display: table-cell;
+    vertical-align: middle;
+}
+.index-banner h2{
+    font-family: catamaran;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+}
+.index-banner h1{
+    font-family: Cormorant Garamond;
+    font-size: 28px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 3px 3px 10px #111;
+}
+.index-links div{
+    margin: 16px 16px 0px;
+    width: calc(100% - 32px);
+    height: 100px;
+}
+.index-links div a {
+    font-family: Catamaran;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 100px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.box1 {
+    background-image: url("../images/top40.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    text-shadow: 2px 2px 8px #111;
+    text-align: center;
+}
+.box2 {
+    background-image: url("../images/pop.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    text-shadow: 2px 2px 8px #111;
+    text-align: center;
+}
+.box3 {
+    background-image: url("../images/hip-hop.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    text-shadow: 2px 2px 8px #111;
+    text-align: center;
+}
+.box4 {
+    background-image: url("../images/chill.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    text-shadow: 2px 2px 8px #111;
+    text-align: center;
+}
+.box5 {
+    background-image: url("../images/house.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    text-shadow: 2px 2px 8px #111;
+    text-align: center;
+}
+.box6 {
+    background-image: url("../images/workout.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    text-shadow: 2px 2px 8px #111;
+    text-align: center;
+}
+.box7 {
+    background-image: url("../images/rock.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    text-shadow: 2px 2px 8px #111;
+    text-align: center;
+}
+.box8 {
+    background-image: url("../images/summer.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    text-shadow: 2px 2px 8px #111;
+    text-align: center;
+}
+.box9 {
+    background-image: url("../images/grey.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+    text-shadow: 2px 2px 8px #111;
+    text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+    .title {
+        font-family: catamaran;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 30px;
+        color: #111;
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    body {
+        padding-top: 80px;
+    }
+    body hr {
+        display: block;
+    }
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .index-banner {
+        height: 400px;
+    }
+    .index-banner h1{
+        display: block;
+        width: 500px;
+        margin: 0 auto;
+    }
+    .index-links {
+        overflow: hidden;
+    }
+    .index-links div{
+        margin: 20px 10px 0px;
+        height: 230px;
+        background-color: #f2f2f2;
+        float: left;
+    }
+    .index-boxlink-square {
+        width: calc(33% - 20px) !important;
+        height: 380px;
+    }
+    .index-links div a {
+        line-height: 230px;
+     }
+    body .text-box{
+        padding-top: 0px;
+    }
+}
+/*footer*/
+footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #1b1f23;
+    overflow: hidden;
+    position: relative;
+    clear: both;
+}
+.foot {
+    min-height: 100%;
+}
+footer ul {
+    width: fit-content;
+    float: left;
+}
+footer ul li {
+    display: block;
+    list-style: none;
+}
+footer ul li a{
+    font-family: catamaran;
+    font-size: 22px;
+    color: #fff;
+    line-height: 36px;
+}
+footer p {
+    font-family: catamaran;
+    font-size: 22px;
+    color: #fff;
+    line-height: 32px;
+}
+.footer-cases {
+    display: none;
+}
+.footer-apps {
+    display: none;
+}
+.footer-Adres {
+    display: none;
+}
+.footer-adres {
+    display: none;
+}
+.footer-sm {
+     width: 50px;
+     float: right;
+ }
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+footer p {
+    padding-bottom: 12px;
+}
+.route {
+display: block;
+    padding-top: 180px;
+}
+@media only screen and (min-width: 1000px) {
+    .footer-cases {
+        display: block;
+        font-size: 16px;
+    }
+    .footer-apps {
+        display: block;
+        font-size: 16px;
+    }
+    .footer-Adres {
+        display: block;
+        font-size: 22px;
+        text-transform: uppercase;
+        line-height: 32px;
+    }
+    .footer-adres {
+        display: block;
+        font-size: 16px;
+        float: right;
+        padding-right: 28%;
+    }
+    footer ul {
+        width: fit-content;
+        float: left;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    footer ul li p{
+        font-family: catamaran;
+        color: #fff;
+        line-height: 18px;
+        padding-top: 8px;
+    }
+    footer ul li a{
+        font-family: catamaran;
+        font-size: 16px;
+        line-height: 36px;
+    }
+    iframe{
+        width: 50%;
+    }
+    .route {
+        padding-left: 20px;
+    }
+}
